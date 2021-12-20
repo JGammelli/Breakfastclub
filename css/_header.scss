@@ -9,7 +9,7 @@ header{
 .headerBanner{
     width: 100vw;
     height: 10vw;
-    
+    position: fixed;
 }
 
 .headerContainer{
@@ -18,10 +18,23 @@ header{
     display: grid;
     grid-template-columns: repeat(3, 10vw) 40vw 30vw;
     grid-template-rows: repeat(5, 1vh);
-    // display: flex;
-    // flex-direction: row;
-    // align-items: center;
     position: absolute;
     top: 0;
     left: 0;
+}
+
+// //Tablet
+// @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1){
+
+// }
+
+
+//Desktop
+@media screen and (min-device-width: 1200px) and (max-device-width: 2000px) and (-webkit-min-device-pixel-ratio: 1) { 
+    .headerBanner{
+        width: 100vw;
+        height: 10vw;
+        
+    }
+    
 }
