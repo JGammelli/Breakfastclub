@@ -1,0 +1,48 @@
+
+.firstPageSection{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../image/water.jpg") ;
+    transform: rotate(180deg);
+    grid-column-start: 1;
+    grid-row-start: 1;
+    position: relative;
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	z-index: -1;
+}
+
+.firstPage{
+    transform: rotate(180deg);
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(10, 10vw);
+    grid-template-rows: repeat(10, 10vh);
+    width: 100vw;
+    height: 100vh;
+    h1{
+        color: rgb(255, 255, 255);
+        -webkit-text-stroke: 0.5px black;
+        grid-column-start: 4;
+        grid-row-start: 4;
+        grid-column-end: 4;
+        grid-row-end: 4;
+    }
+    img{
+        width: 250%;
+    }
+}
+
+.strawberrieBowl{
+    grid-column-start: 7;
+    grid-row-start: 8;
+}
+
+.orangeBowl{
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+

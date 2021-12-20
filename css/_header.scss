@@ -1,0 +1,27 @@
+header{
+    width: 100vw;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    position: fixed;
+}
+
+.headerBanner{
+    width: 100vw;
+    height: 10vw;
+    
+}
+
+.headerContainer{
+    width: 100vw;
+    height: 5vh;
+    display: grid;
+    grid-template-columns: repeat(3, 10vw) 40vw 30vw;
+    grid-template-rows: repeat(5, 1vh);
+    // display: flex;
+    // flex-direction: row;
+    // align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

@@ -1,0 +1,20 @@
+@import "./header";
+@import "./headerText";
+@import "./firstPage";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Racing Sans One';
+}
+
+body{
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows:  [row1-start] 25% [row1-end] 100px [third-line] auto [last-line];
+}
+main{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    z-index: -1;
+}

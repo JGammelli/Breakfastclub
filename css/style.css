@@ -1,0 +1,150 @@
+header {
+  width: 100vw;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 7;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  position: fixed;
+}
+
+.headerBanner {
+  width: 100vw;
+  height: 10vw;
+}
+
+.headerContainer {
+  width: 100vw;
+  height: 5vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (10vw)[3] 40vw 30vw;
+      grid-template-columns: repeat(3, 10vw) 40vw 30vw;
+  -ms-grid-rows: (1vh)[5];
+      grid-template-rows: repeat(5, 1vh);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+p {
+  font-size: 0.5em;
+  z-index: 1;
+  place-self: center;
+}
+
+h4 {
+  font-size: 0.8em;
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  place-self: start center;
+  color: white;
+  -webkit-text-stroke: 0.5px black;
+}
+
+.PSignUp {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+}
+
+.PAboutUs {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+}
+
+.PMenu {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+}
+
+.firstPageSection {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../image/water.jpg");
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.firstPage {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  position: absolute;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (10vw)[10];
+      grid-template-columns: repeat(10, 10vw);
+  -ms-grid-rows: (10vh)[10];
+      grid-template-rows: repeat(10, 10vh);
+  width: 100vw;
+  height: 100vh;
+}
+
+.firstPage h1 {
+  color: white;
+  -webkit-text-stroke: 0.5px black;
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  grid-column-end: 4;
+  grid-row-end: 4;
+}
+
+.firstPage img {
+  width: 250%;
+}
+
+.strawberrieBowl {
+  -ms-grid-column: 7;
+      grid-column-start: 7;
+  -ms-grid-row: 8;
+      grid-row-start: 8;
+}
+
+.orangeBowl {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Racing Sans One';
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (20%)[5];
+      grid-template-columns: repeat(5, 20%);
+  -ms-grid-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line];
+      grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line];
+}
+
+main {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  z-index: -1;
+}
+/*# sourceMappingURL=style.css.map */
