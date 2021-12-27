@@ -1,0 +1,129 @@
+.thirdSection{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(10, 10vw);
+    background-color: #FFF9DA;
+    width: 100vw;
+    height: 50vh;
+}
+
+.fruitBanner{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    position: absolute;
+    width: 100vw;
+    background-color: #FBE6A3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    img{
+        width: 32vw;
+        order: 2;
+    }
+
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    p, a{
+        font-family: "Red Rose";
+        color: #4C3F67;
+        width: 49vw;
+        margin-bottom: 4px;
+        font-size: 2.3vw;
+    }
+    a{
+        color: #CD2644;
+        text-decoration: underline;
+    }
+}
+
+.roundBtn{
+    margin-top: 4vh;
+    margin-left: 2vw;
+    background-color: #B6FFAF;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    width: 20vw;
+    height: 20vw;
+    z-index: 1;
+    border-style: solid;
+    border-color: white;
+    font-family: "Red Rose";
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 5px, rgba(0, 0, 0, 0.22) 0px 1px 2px;
+    font-size: 3.5vw;
+}
+
+.roundBtn:hover{
+    background-color: #A7FAFF;
+    width: 21vw;
+    height: 21vw;
+}
+.roundBtn:focus{
+    background-color: #E0D1FF;
+}
+
+//Tablet
+@media only screen and (min-device-width: 540px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1){
+    .fruitBanner{
+        p, a{
+            width: 53vw;
+            font-size: 2vw;
+            margin-bottom: 10px;
+        }
+        img{
+            width: 35%;
+            height: 35%;
+        }
+    }
+    .roundBtn{
+        margin-top: 4vw;
+        margin-left: 4vw;
+        width: 12vw;
+        height: 12vw;
+        border-width: 5.5px;
+        width: 15vw;
+        height: 15vw;
+        font-size: 2.8vw;
+    }
+}
+
+
+//Desktop
+@media (min-width:1025px) { 
+    .fruitBanner{
+        p, a{
+            width: 27em;
+            font-size: 1.7em;
+            margin-bottom: 18px;
+        }
+        img{
+            width: 30%;
+        }
+    }
+    .thirdSection{
+        height: 100vh;
+    }
+    .roundBtn{
+        margin-top: 5vw;
+        margin-left: 4vw;
+        width: 13vw;
+        height: 13vw;
+        border-width: 5.5px;
+        font-size: 2vw;
+    }
+    .roundBtn:hover{
+        width: 13.5vw;
+        height: 13.5vw;
+    }
+    .roundBtn:focus{
+        background-color: #E0D1FF;
+    }
+}

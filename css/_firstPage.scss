@@ -2,19 +2,15 @@
     width: 100vw;
     height: 100vh;
     background-image: url("../image/water.jpg") ;
-    transform: rotate(180deg);
     grid-column-start: 1;
     grid-row-start: 1;
     position: relative;
-
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center;
 	z-index: -1;
 }
 
 .firstPage{
-    transform: rotate(180deg);
     position: absolute;
     display: grid;
     grid-template-columns: repeat(10, 10vw);
@@ -25,10 +21,10 @@
         color: rgb(255, 255, 255);
         -webkit-text-stroke: 0.4px black;
         grid-column-start: 2;
-        grid-column-end: 11;
+        grid-column-end: 10;
         grid-row-start: 5;
         grid-row-end: 6;
-        font-size: 2.3em;
+        font-size: 10vw;
         text-shadow: 2px 2px 7px rgba(0,0,0, 0.5);
     }
 
@@ -55,24 +51,81 @@
     grid-row-start: 10;
     grid-row-end: 11;
     background-color: #FFB6B6;
-    position: absolute;
     align-self: end;
+    position: absolute;
     display: flex;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 5px, rgba(0, 0, 0, 0.22) 0px 1px 2px;
     p{
         color: rgb(255, 255, 255);
         -webkit-text-stroke: 1px black;
-        font-size: 1.35em;
+        font-size: 5.5vw;
         font-family: 'Red Rose';
         align-self: center;
     }
 }
 //Tablet
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1){
+    .text-scroll-banner{
+        p{
+            font-size: 2.6em;
+            -webkit-text-stroke: 1.5px black;
+        }
+    }
+    .strawberrieBowl{
 
+        grid-row-start: 7;
+        width: 210%;
+    
+    }
+    
+    .orangeBowl{
+        width: 270%;
+    }
+
+    .firstPage{
+        h1{
+            grid-column-start: 2;
+            grid-column-end: 10;
+            grid-row-start: 5;
+            grid-row-end: 6;
+            font-size: 8vw;
+            -webkit-text-stroke: .8px black;
+        }
+    
+    }
 }
 
 
 //Desktop
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) { 
+@media (min-width:1025px) { 
+    .text-scroll-banner{
+        p{
+            font-size: 3.5em;
+            -webkit-text-stroke: 1px black;
+        }
+    }
+    .strawberrieBowl{
+        grid-column-start: 9;
+        grid-row-start: 7;
+        width: 130%;
+    
+    }
+    
+    .orangeBowl{
+        width: 160%;
+    }
 
+    .firstPage{
+        h1{
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            width: fit-content;
+            font-size: 6.5vw;
+            -webkit-text-stroke: .1px black;
+            
+        }
+    
+    }
 }

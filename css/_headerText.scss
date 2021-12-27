@@ -1,14 +1,19 @@
 
-p{
-    font-size: 0.5em;
+a{
+    font-size:2.3vw;
     z-index: 1;
     place-self: center;
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: #FF9E9E;
 }
 
-h4{
-    font-size: 0.8em;
+h2{
+    font-size: 3.4vw;
     grid-column-start: 4;
-    grid-row-start: 3;
+    grid-row-start: 4;
     place-self: start center;
     color: white;
     -webkit-text-stroke: 0.3px black;
@@ -16,42 +21,44 @@ h4{
 
 .PSignUp{
     grid-column-start: 1;
-    grid-row-start: 2;
+    grid-row-start: 4;
 }
 
 .PAboutUs{
     grid-column-start: 2;
-    grid-row-start: 2;
+    grid-row-start: 4;
 }
 
 .PMenu{
     grid-column-start: 3;
-    grid-row-start: 2;
+    grid-row-start: 4;
 }
 
 //Tablet
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1){
-    h4{
-        font-size: 1.6em;
-        grid-row-start: 4;
+    h2{
+        font-size: 3.4vw;
+        grid-row-start: 3;
+        grid-column-start: 4;
         -webkit-text-stroke: 0.5px black;
     }
     .PSignUp, .PAboutUs, .PMenu{
-        font-size: 1.1em;
+        font-size: 2vw;
         grid-row-start: 3;
     }
 }
 
 
 //Desktop
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) { 
-    h4{
-        font-size: 1.6em;
-        grid-row-start: 4;
-        -webkit-text-stroke: 0.5px black;
+@media (min-width:1025px) { 
+    h2{
+        font-size: 3vw;
+        grid-column-start: 5;
+        grid-row-start: 2;
+        -webkit-text-stroke: 0.1px black;
     }
     .PSignUp, .PAboutUs, .PMenu{
-        font-size: 1.1em;
-        grid-row-start: 3;
+        font-size: 1.3vw;
+        grid-row-start: 2;
     }
 }
