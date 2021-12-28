@@ -1,13 +1,13 @@
 .toastDiv{
     display: grid;
-    grid-template-columns:5% repeat(9, 10%) 5%;
-    grid-template-rows: repeat(20, 5%);
+    grid-template-columns:5vw repeat(9, 10vw) 5vw;
+    grid-template-rows: repeat(20, 5vw);
     width: 100%;
     height: 50%;
     position: relative;
     h3{
-        grid-column-start: 6;
-        grid-column-end: 7;
+        grid-column-start: 5;
+        grid-column-end: 6;
         grid-row-start: 1;
         justify-self: center;
         font-family: "Red Rose";
@@ -18,8 +18,8 @@
         margin-top: 0.3em;
     }
     h6{
-        grid-column-start: 6;
-        grid-column-end: 7;
+        grid-column-start: 5;
+        grid-column-end: 6;
         grid-row-start: 4;
         justify-self: center;
         font-family: "Red Rose";
@@ -30,11 +30,12 @@
 }
 
 .toastTxt{
-    grid-column-start:4;
-    grid-column-end: 9;
+    grid-column-start:3;
+    grid-column-end: 8;
     grid-row-start: 5;
     justify-self: center;
     text-align: center;
+    letter-spacing: 0.5px;
     p{
         font-size: 2.5vw;
         font-family: "Red Rose";
@@ -44,26 +45,23 @@
 
 .toastIngr{
     grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 17;
-    grid-row-end: 18;
+    grid-row-start: 14;
     font-size: 2.5vw;
     font-family: 'Petit Formal Script';
     height: 13vw;
+    width: fit-content;
     border-bottom: 1px solid rgb(0, 0, 0);
     line-height: 4vw;
 }
 
 
 .toast2Ingr{
-    grid-column-start: 9;
-    grid-column-end: 11;
-    grid-row-start: 17;
-    grid-row-end: 18;
+    grid-column-start: 8;
+    grid-row-start: 14;
     font-size: 2.5vw;
     font-family: 'Petit Formal Script';
     text-align: right;
-    width: 13vw;
+    width: fit-content;
     height: 17vw;
     border-bottom: 1px solid rgb(0, 0, 0);
     line-height: 4vw;
@@ -71,47 +69,107 @@
 
 .toast2Img{
     grid-column-start: 6;
-    grid-row-start: 15;
-    width: 5.5em;
+    grid-row-start: 12;
+    width: 23vw;
+    margin-left: -3vw;
 }
 .toastImg{
     grid-column-start: 2;
-    grid-row-start: 12;
-    width: 4.5em;
+    grid-row-start: 10;
+    width: 18vw;
 }
 .toasterImg{
     position: absolute;
     right: 0;
     grid-row-start: 1;
     margin-top: 0.5em;
-    width: 5em;
+    width: 23vw;
 }
 
 //Tablet
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1){
+@media only screen and (min-device-width: 768px){
     .toastDiv{
         h3{
             -webkit-text-stroke: 1px black;
         }
         h6{
-            grid-column-start: 6;
-            grid-column-end: 7;
-            grid-row-start: 6;
+            grid-row-start: 4;
             font-size: 2.5vw;
+            
         }
     }
     .toastTxt{
-        grid-column-start:4;
-        grid-column-end: 9;
         grid-row-start: 5;
         p{
-            font-size: 2vw;
+            font-size: 1.8vw;
+            margin-top: 2vw;
+            letter-spacing: 1px;
         }
+    }
+    .toastIngr{
+        grid-column-start: 2;
+        grid-row-start: 8;
+        font-size: 1.8vw;
+        height: 10vw;
+        width: fit-content;
+        line-height: 3vw;
+    }
+    
+    .toast2Ingr{
+        grid-column-start: 9;
+        grid-row-start: 9;
+        margin-top: 2vw;
+        margin-left: -1.5vw;
+        font-size: 1.8vw;
+        line-height: 3vw;
+        height: 13vw;
+        width: fit-content;
+    }
+    
+    .toast2Img{
+        grid-column-start: 7;
+        grid-row-start: 7;
+        margin-top: 2.5vw;
+        width: 23vw;
+    }
+    .toastImg{
+        grid-row-start: 5;
+        width: 15vw;
+    }
+    .toasterImg{
+        margin-top: 1em;
+        width: 16vw;
     }
 }
 
 
 //Desktop
 @media (min-width:1025px) { 
-
+    .toastDiv{
+        h6{
+            grid-row-start: 3;
+            font-size: 2.5vw;
+            margin-top: 2vw;
+        }
+    }
+    .toastTxt{
+        grid-row-start: 4;
+        p{
+            font-size: 1.5vw;
+        }
+    }
+    .toast2Img{
+        grid-row-start: 6;
+        margin-top: 0;
+    }
+    .toastImg{
+        grid-row-start: 4;
+    }
+    .toastIngr{
+        grid-row-start: 7;
+    }
+      
+    .toast2Ingr{
+        grid-row-start: 8;
+    }
 }
