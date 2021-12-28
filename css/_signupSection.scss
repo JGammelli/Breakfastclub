@@ -1,0 +1,105 @@
+.signupSection{
+    background-color: #FFF9DA;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.cirkleDiv{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #E0D1FF;
+    position: absolute;
+    border-radius: 50%;
+    width: 90vw;
+    height: 60vw;
+    box-shadow: rgba(59, 53, 53, 0.3) 0px 5px 5px, rgba(82, 76, 76, 0.22) 0px 1px 2px;
+}
+.signupWrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-flow: column;
+    width: fit-content;
+    height: 60%;
+    text-align: center;
+    justify-content: space-between;
+    h5{
+        font-family: "Red Rose";
+        font-size: 4vw;
+    }
+    input{
+        font-family: "Red Rose";
+        padding: .5vw;
+        padding-left: 2vw;
+        border-style: dashed;
+        border-color: #3CD0FF;
+        border-width: 1vw;
+        font-size: 3vw;
+    }
+    input::placeholder{
+        color: #ADADAD;
+    }
+    button{
+
+        font-family: "Red Rose";
+        font-size: 4vw;
+        background-color: #FEFFC0;
+        cursor: pointer;
+        border: none;
+        width: 30vw;
+        height: 9vw;
+        align-self: center;
+        box-shadow: rgba(59, 53, 53, 0.3) 0px 5px 5px, rgba(82, 76, 76, 0.22) 0px 1px 2px;
+    }
+}
+
+@media only screen and (min-device-width: 768px){
+    .signupWrap{
+        h5{
+            font-size: 3.5vw;
+        }
+        input{
+            padding: .8vw;
+            padding-left: 2vw;
+            border-width: .6vw;
+            font-size: 2.3vw;
+            width: 43vw;
+            align-self: center;
+        }
+        button{
+            font-size: 3.3vw;
+            width: 25vw;
+            height: 7vw;
+        }
+    } 
+}
+
+//Desktop
+@media (min-width:1025px) { 
+    .cirkleDiv{
+        width: 63vw;
+        height: 43vw;
+    }
+    .signupWrap{
+        h5{
+            font-size: 2.5vw;
+        }
+        input{
+            padding: .5vw;
+            padding-left: 2vw;
+            border-width: .2vw;
+            font-size: 1.3vw;
+            width: 30vw;
+            align-self: center;
+        }
+        button{
+            font-size: 2.2vw;
+            width: 19vw;
+            height: 5vw;
+        }
+    } 
+}

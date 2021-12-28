@@ -49,7 +49,6 @@
     margin-left: 2vw;
     background-color: #B6FFAF;
     cursor: pointer;
-    border: none;
     border-radius: 50%;
     width: 20vw;
     height: 20vw;
@@ -57,7 +56,7 @@
     border-style: solid;
     border-color: white;
     font-family: "Red Rose";
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 5px, rgba(0, 0, 0, 0.22) 0px 1px 2px;
+    box-shadow: rgba(59, 53, 53, 0.3) 0px 5px 5px, rgba(82, 76, 76, 0.22) 0px 1px 2px;
     font-size: 3.5vw;
 }
 
@@ -86,8 +85,6 @@
     .roundBtn{
         margin-top: 4vw;
         margin-left: 4vw;
-        width: 12vw;
-        height: 12vw;
         border-width: 5.5px;
         width: 15vw;
         height: 15vw;

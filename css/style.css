@@ -6,6 +6,7 @@ header {
   -ms-grid-row: 1;
       grid-row-start: 1;
   position: fixed;
+  z-index: 1;
 }
 
 .headerBanner {
@@ -156,7 +157,7 @@ h2 {
   -ms-grid-row: 5;
       grid-row-start: 5;
   grid-row-end: 6;
-  font-size: 10vw;
+  font-size: 9.3vw;
   text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
 }
 
@@ -413,7 +414,6 @@ h2 {
   margin-left: 2vw;
   background-color: #B6FFAF;
   cursor: pointer;
-  border: none;
   border-radius: 50%;
   width: 20vw;
   height: 20vw;
@@ -421,8 +421,8 @@ h2 {
   border-style: solid;
   border-color: white;
   font-family: "Red Rose";
-  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 5px, rgba(0, 0, 0, 0.22) 0px 1px 2px;
-          box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 5px, rgba(0, 0, 0, 0.22) 0px 1px 2px;
+  -webkit-box-shadow: rgba(59, 53, 53, 0.3) 0px 5px 5px, rgba(82, 76, 76, 0.22) 0px 1px 2px;
+          box-shadow: rgba(59, 53, 53, 0.3) 0px 5px 5px, rgba(82, 76, 76, 0.22) 0px 1px 2px;
   font-size: 3.5vw;
 }
 
@@ -449,8 +449,6 @@ h2 {
   .roundBtn {
     margin-top: 4vw;
     margin-left: 4vw;
-    width: 12vw;
-    height: 12vw;
     border-width: 5.5px;
     width: 15vw;
     height: 15vw;
@@ -484,6 +482,142 @@ h2 {
   }
   .roundBtn:focus {
     background-color: #E0D1FF;
+  }
+}
+
+.signupSection {
+  background-color: #FFF9DA;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.cirkleDiv {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #E0D1FF;
+  position: absolute;
+  border-radius: 50%;
+  width: 90vw;
+  height: 60vw;
+  -webkit-box-shadow: rgba(59, 53, 53, 0.3) 0px 5px 5px, rgba(82, 76, 76, 0.22) 0px 1px 2px;
+          box-shadow: rgba(59, 53, 53, 0.3) 0px 5px 5px, rgba(82, 76, 76, 0.22) 0px 1px 2px;
+}
+
+.signupWrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 60%;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.signupWrap h5 {
+  font-family: "Red Rose";
+  font-size: 4vw;
+}
+
+.signupWrap input {
+  font-family: "Red Rose";
+  padding: .5vw;
+  padding-left: 2vw;
+  border-style: dashed;
+  border-color: #3CD0FF;
+  border-width: 1vw;
+  font-size: 3vw;
+}
+
+.signupWrap input::-webkit-input-placeholder {
+  color: #ADADAD;
+}
+
+.signupWrap input:-ms-input-placeholder {
+  color: #ADADAD;
+}
+
+.signupWrap input::-ms-input-placeholder {
+  color: #ADADAD;
+}
+
+.signupWrap input::placeholder {
+  color: #ADADAD;
+}
+
+.signupWrap button {
+  font-family: "Red Rose";
+  font-size: 4vw;
+  background-color: #FEFFC0;
+  cursor: pointer;
+  border: none;
+  width: 30vw;
+  height: 9vw;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-shadow: rgba(59, 53, 53, 0.3) 0px 5px 5px, rgba(82, 76, 76, 0.22) 0px 1px 2px;
+          box-shadow: rgba(59, 53, 53, 0.3) 0px 5px 5px, rgba(82, 76, 76, 0.22) 0px 1px 2px;
+}
+
+@media only screen and (min-device-width: 768px) {
+  .signupWrap h5 {
+    font-size: 3.5vw;
+  }
+  .signupWrap input {
+    padding: .8vw;
+    padding-left: 2vw;
+    border-width: .6vw;
+    font-size: 2.3vw;
+    width: 43vw;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .signupWrap button {
+    font-size: 3.3vw;
+    width: 25vw;
+    height: 7vw;
+  }
+}
+
+@media (min-width: 1025px) {
+  .cirkleDiv {
+    width: 63vw;
+    height: 43vw;
+  }
+  .signupWrap h5 {
+    font-size: 2.5vw;
+  }
+  .signupWrap input {
+    padding: .5vw;
+    padding-left: 2vw;
+    border-width: .2vw;
+    font-size: 1.3vw;
+    width: 30vw;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .signupWrap button {
+    font-size: 2.2vw;
+    width: 19vw;
+    height: 5vw;
   }
 }
 
@@ -666,7 +800,7 @@ h2 {
   margin-top: 3vw;
 }
 
-.milkShakeIng {
+.milkShakeIngr {
   -ms-grid-column: 2;
       grid-column-start: 2;
   -ms-grid-row: 16;
@@ -681,11 +815,11 @@ h2 {
       justify-self: center;
 }
 
-.juiceIng {
-  -ms-grid-column: 8;
-      grid-column-start: 8;
-  -ms-grid-row: 16;
-      grid-row-start: 16;
+.juiceIngr {
+  -ms-grid-column: 7;
+      grid-column-start: 7;
+  -ms-grid-row: 13;
+      grid-row-start: 13;
   font-size: 2.5vw;
   font-family: 'Petit Formal Script';
   width: 10vw;
@@ -697,11 +831,11 @@ h2 {
       justify-self: right;
 }
 
-.coffeIng {
-  -ms-grid-column: 5;
-      grid-column-start: 5;
-  -ms-grid-row: 17;
-      grid-row-start: 17;
+.coffeIngr {
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+  -ms-grid-row: 14;
+      grid-row-start: 14;
   font-size: 2.5vw;
   font-family: 'Petit Formal Script';
   height: 9vw;
@@ -741,6 +875,116 @@ h2 {
   width: 12vw;
 }
 
+@media only screen and (min-device-width: 768px) {
+  .drinkDiv h6 {
+    font-size: 2.5vw;
+  }
+  .drinkTxt {
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+  }
+  .drinkTxt p {
+    font-size: 1.8vw;
+    margin-top: 2vw;
+    letter-spacing: 1px;
+  }
+  .milkShakeIngr {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    -ms-grid-row: 9;
+        grid-row-start: 9;
+    height: 6vw;
+    margin-top: -2vw;
+    font-size: 1.8vw;
+    line-height: 3vw;
+  }
+  .juiceIngr {
+    -ms-grid-column: 7;
+        grid-column-start: 7;
+    -ms-grid-row: 8;
+        grid-row-start: 8;
+    margin-right: -2vw;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 6vw;
+    font-size: 1.8vw;
+    line-height: 3vw;
+  }
+  .coffeIngr {
+    -ms-grid-column: 5;
+        grid-column-start: 5;
+    -ms-grid-row: 10;
+        grid-row-start: 10;
+    margin-top: 1vw;
+    margin-left: -2vw;
+    height: 6vw;
+    font-size: 1.8vw;
+    line-height: 3vw;
+  }
+  .milkShakeImg {
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    margin-left: 1.5vw;
+    width: 10vw;
+  }
+  .juiceImg {
+    -ms-grid-column: 7;
+        grid-column-start: 7;
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    width: 9vw;
+    margin-right: 7vw;
+  }
+  .coffeeImg {
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    -ms-grid-row: 9;
+        grid-row-start: 9;
+    margin-right: 3vw;
+  }
+}
+
+@media (min-width: 1025px) {
+  .drinkDiv h6 {
+    margin-top: 2vw;
+  }
+  .drinkTxt {
+    margin-top: 2vw;
+  }
+  .drinkTxt p {
+    font-size: 1.5vw;
+  }
+  .milkShakeIngr {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    -ms-grid-row: 8;
+        grid-row-start: 8;
+    margin-top: 0vw;
+  }
+  .juiceIngr {
+    margin-right: -3vw;
+  }
+  .coffeIngr {
+    -ms-grid-row: 9;
+        grid-row-start: 9;
+    margin-left: 0vw;
+  }
+  .milkShakeImg {
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    margin-top: -3vw;
+  }
+  .coffeeImg {
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    -ms-grid-row: 8;
+        grid-row-start: 8;
+  }
+}
+
 .menuSection {
   background-color: #FFF9DA;
   width: 100vw;
@@ -774,7 +1018,6 @@ main {
       grid-column-start: 1;
   -ms-grid-row: 1;
       grid-row-start: 1;
-  z-index: -1;
 }
 
 html {

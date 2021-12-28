@@ -29,7 +29,7 @@
     
 }
 
-.milkShakeIng{
+.milkShakeIngr{
     grid-column-start: 2;
     grid-row-start: 16;
     margin-top: 0.5em;
@@ -41,9 +41,9 @@
     justify-self: center;
 }
 
-.juiceIng{
-    grid-column-start: 8;
-    grid-row-start: 16;
+.juiceIngr{
+    grid-column-start: 7;
+    grid-row-start: 13;
     font-size: 2.5vw;
     font-family: 'Petit Formal Script';
     width: 10vw;
@@ -54,9 +54,9 @@
     justify-self: right;
 }
 
-.coffeIng{
-    grid-column-start: 5;
-    grid-row-start: 17;
+.coffeIngr{
+    grid-column-start: 4;
+    grid-row-start: 14;
     font-size: 2.5vw;
     font-family: 'Petit Formal Script';
     height:9vw;
@@ -86,12 +86,105 @@
 }
 
 //Tablet
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1){
-
+@media only screen and (min-device-width: 768px){
+    .drinkDiv{
+        h6{
+            font-size: 2.5vw;
+        }
+    }
+    .drinkTxt{
+        grid-row-start: 3;
+        p{
+            font-size: 1.8vw;
+            margin-top: 2vw;
+            letter-spacing: 1px;
+        }
+    }
+    
+    .milkShakeIngr{
+        grid-column-start: 2;
+        grid-row-start: 9;
+        height: 6vw;
+        margin-top: -2vw;
+        font-size: 1.8vw;
+        line-height: 3vw;
+    }
+    
+    .juiceIngr{
+        grid-column-start: 7;
+        grid-row-start: 8;
+        margin-right: -2vw;
+        width: fit-content;
+        height:6vw;
+        font-size: 1.8vw;
+        line-height: 3vw;
+    }
+    
+    .coffeIngr{
+        grid-column-start:5;
+        grid-row-start: 10;
+        margin-top: 1vw;
+        margin-left: -2vw;
+        height:6vw;
+        font-size: 1.8vw;
+        line-height: 3vw;
+    }
+    
+    .milkShakeImg{
+        grid-row-start: 3;
+        margin-left: 1.5vw;
+        width: 10vw;
+    }
+    .juiceImg{
+        grid-column-start:7;
+        grid-row-start: 4;
+        justify-self: center;
+        width: 9vw;
+        margin-right: 7vw;
+    }
+    .coffeeImg{
+        grid-column-start:3;
+        grid-row-start: 9;
+        margin-right: 3vw;
+    }
 }
 
 
 //Desktop
 @media (min-width:1025px) { 
-
+    .drinkDiv{
+        h6{
+            margin-top: 2vw;
+        }
+    }
+    .drinkTxt{
+        margin-top: 2vw;
+        p{
+            font-size: 1.5vw;
+        }
+    }
+     
+    .milkShakeIngr{
+        grid-column-start: 2;
+        grid-row-start: 8;
+        margin-top: 0vw;
+    }
+    
+    .juiceIngr{
+        margin-right: -3vw;
+    }
+    
+    .coffeIngr{
+        grid-row-start: 9;
+        margin-left: 0vw;
+    }
+    
+    .milkShakeImg{
+        grid-row-start: 3;
+        margin-top: -3vw;
+    }
+    .coffeeImg{
+        grid-column-start:3;
+        grid-row-start: 8;
+    }
 }
