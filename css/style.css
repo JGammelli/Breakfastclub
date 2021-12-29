@@ -1086,6 +1086,79 @@ h2 {
   }
 }
 
+footer {
+  background-color: #FFB6B6;
+  width: 100vw;
+  height: 35vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer p {
+  font-family: "Red Rose";
+  margin-top: 2vw;
+  font-size: 4.7vw;
+  line-height: 7vw;
+}
+
+footer img {
+  width: 20vw;
+  margin-top: 10vw;
+}
+
+footer span {
+  margin: 0.1vw;
+}
+
+@media only screen and (min-device-width: 768px) {
+  footer {
+    height: 15vh;
+  }
+  footer div {
+    width: 50vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer p {
+    font-size: 3vw;
+    margin-top: 0;
+    line-height: 5.5vw;
+  }
+  footer img {
+    width: 15vw;
+    margin-top: 0vw;
+  }
+}
+
+@media (min-width: 1025px) {
+  footer {
+    height: 25vh;
+  }
+  footer div {
+    width: 70vw;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  footer p {
+    font-size: 1.5vw;
+    line-height: 3vw;
+  }
+  footer img {
+    width: 9vw;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
