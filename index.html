@@ -43,8 +43,8 @@
         <main>
             <section class="firstPageSection">             
                 <div class="firstPage">
-                    <img class="orangeBowl" src="./image/orange.png" alt="A plate with orangeslices">
-                    <img class="strawberrieBowl" src="./image/strawberrie.png" alt="A bowl with strawberries">
+                    <img class="orangeBowl grow-shrink" src="./image/orange.png" alt="A plate with orangeslices">
+                    <img class="strawberrieBowl rotate" src="./image/strawberrie.png" alt="A bowl with strawberries">
                     <h1>“Some quote here, <br> lin dictum non.”</h1>
                     <div class="text-scroll-banner">
                         <p class="text-scroll">Some text that slides through here.</p>
@@ -53,7 +53,7 @@
             </section>
             <section class="secondSection">
                 <div class="toastBanner">
-                    <img src="image/sandwitches.jpg" alt="Image with toasts with diffrent color on their spread.">
+                    <img src="image/sandwitches.jpg" alt="Toasts with diffrent color on their spread.">
                     <div>
                         <p>We do this and that and bla bla...</p>
                         <p>Quam elementum pulvinar etiam non quam lacus suspendisse faucibus interdum.</p>
@@ -66,7 +66,7 @@
             <section class="thirdSection">
                 <button class="roundBtn">Join <br> the club!</button>
                 <div class="fruitBanner">
-                    <img src="image/fruits.jpg" alt="Image with different fruits.">
+                    <img src="image/fruits.jpg" alt="Different fruits.">
                     <div>
                         <p>You can join and become one!</p>
                         <p>Quam elementum pulvinar etiam non quam lacus suspendisse faucibus interdum.</p>
@@ -89,9 +89,9 @@
                             <p>Paint jam. Put cheese and<br>vegetebles.</p>
                             <p>I do not get tired of eating it<br>everyday.</p>
                         </div>
-                        <img class="toastImg" src="./image/sanwitch2.png" alt="A toast from the manu with egg, sallad and cheese on.">
+                        <img class="toastImg grow" src="./image/sanwitch2.png" alt="A toast from the manu with egg, sallad and cheese on.">
                         <p class="toastIngr">Egg<br>Sallad<br>Cheese</p>
-                        <img class="toast2Img" src="./image/sanwitch.png" alt="A toast from the menu with egg, sakkad, paprika and avocado on.">
+                        <img class="toast2Img grow" src="./image/sanwitch.png" alt="A toast from the menu with egg, sakkad, paprika and avocado on.">
                         <p class="toast2Ingr">Egg<br>Sallad<br>Paprika<br>Avocado</p>
                     </div>
                     <div class="drinkDiv">
@@ -101,11 +101,11 @@
                             <p>Blueberries, milk and juce, and<br>tea.</p>
                             <p>Will bring you energy and comfort<br>everyday.</p>
                         </div>
-                        <img class="milkShakeImg" src="./image/milkshake.png" alt="A drink from the menu, Strawberry milkshake.">
+                        <img class="milkShakeImg grow" src="./image/milkshake.png" alt="A drink from the menu, Strawberry milkshake.">
                         <p class="milkShakeIngr">Strawberry<br>Milkshake</p>
-                        <img class="juiceImg" src="./image/juice.png" alt="A drink from the menu, Orangejuice.">
+                        <img class="juiceImg grow" src="./image/juice.png" alt="A drink from the menu, Orangejuice.">
                         <p class="juiceIngr">Orange<br>Juice</p>
-                        <img class="coffeeImg" src="./image/cup.png" alt="A drink from the menu, Coffe with milk.">
+                        <img class="coffeeImg grow" src="./image/cup.png" alt="A drink from the menu, Coffe with milk.">
                         <p class="coffeIngr">Coffee<br>Milk</p>
                     </div>
                 </div>
@@ -115,10 +115,25 @@
                     <div class="signupWrap">
                         <h5>Interested for more information?<br>Sign up here!</h5>
                         <input type="email" placeholder="Enter your email here please..."/>
-                        <button>Join the club</button>
+                        <button onclick="SignedUpClicked()">Join the club</button>
                     </div>
                 </div>
             </section>
+            <div class="cookieWrap" id="cookie">
+                <img class="mandarinsImg" src="./image/mandariner.png" alt="3 mandarins stacked on top of each other"/>
+                <div class="cookieBanner">
+                    
+                </div>
+                <h2>Cookie</h2>
+                <p>Some cookie text here. Sodales ut eu sem integer vitae. 
+                    Semper feugiat nibh sed pulvinar. Enim blandit volutpat 
+                    maecenas volutpat blandit aliquam etiam erat. Mattis rhoncus 
+                    urna neque viverra justo nec ultrices.
+                </p>
+                <button onclick="CookieClicked()" class="acceptBtn">Accept</button>
+                <button onclick="CookieClicked()" class="declineBtn">Decline</button>
+                <img class="fruitsImg" src="./image/smoothie.png" alt="A smoothie and some fruits"/>
+            </div>
         </main>
         <footer>
             <div>
@@ -131,8 +146,18 @@
                     <p>Find us</p>
                 </span>
             </div>
-            <img src="./svg/footer-jam.svg" alt="svg of a jam with a spoon"/>
+            <img src="./svg/footer-jam.svg" alt="A jam with a spoon"/>
         </footer>
+        <script>
+            function SignedUpClicked(){
+                alert("Succes! You are now one of us!")
+            }
+
+            function CookieClicked(){
+                var cookie = document.getElementById("cookie")
+                cookie.parentNode.removeChild(cookie);
+            }
+        </script>
     </body>
 
 </html>

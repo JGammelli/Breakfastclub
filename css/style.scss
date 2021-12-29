@@ -1,3 +1,4 @@
+@import "./variables";
 @import "./header";
 @import "./headerText";
 @import "./firstPage";
@@ -8,11 +9,13 @@
 @import "./drinkSection";
 @import "./menuSection";
 @import "./footer";
+@import "./cookie";
+@import "./effects";
 
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Racing Sans One';
+    font-family: 'Racing Sans One', monospace;
 }
 
 body{

@@ -1,5 +1,7 @@
+@import "./variables";
+
 .signupSection{
-    background-color: #FFF9DA;
+    background-color: $background-color;
     width: 100vw;
     height: 100vh;
     position: relative;
@@ -14,7 +16,7 @@
     border-radius: 50%;
     width: 90vw;
     height: 60vw;
-    box-shadow: rgba(59, 53, 53, 0.3) 0px 5px 5px, rgba(82, 76, 76, 0.22) 0px 1px 2px;
+    box-shadow: $box-shadow;
 }
 .signupWrap{
     position: absolute;
@@ -28,11 +30,11 @@
     text-align: center;
     justify-content: space-between;
     h5{
-        font-family: "Red Rose";
+        font-family: "Red Rose", sans-serif;
         font-size: 4vw;
     }
     input{
-        font-family: "Red Rose";
+        font-family: "Red Rose", sans-serif;
         padding: .5vw;
         padding-left: 2vw;
         border-style: dashed;
@@ -45,15 +47,18 @@
     }
     button{
 
-        font-family: "Red Rose";
+        font-family: "Red Rose", sans-serif;
         font-size: 4vw;
-        background-color: #FEFFC0;
+        background-color: $yellow-btn;
         cursor: pointer;
         border: none;
         width: 30vw;
         height: 9vw;
         align-self: center;
-        box-shadow: rgba(59, 53, 53, 0.3) 0px 5px 5px, rgba(82, 76, 76, 0.22) 0px 1px 2px;
+        box-shadow: $box-shadow;
+    }
+    button:hover{
+        background-color: $yellow-btn-hover;
     }
 }
 

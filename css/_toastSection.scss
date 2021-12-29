@@ -1,3 +1,5 @@
+@import "./variables";
+
 .toastDiv{
     display: grid;
     grid-template-columns:5vw repeat(9, 10vw) 5vw;
@@ -10,10 +12,10 @@
         grid-column-end: 6;
         grid-row-start: 1;
         justify-self: center;
-        font-family: "Red Rose";
+        font-family: "Red Rose", sans-serif;
         color: #FFB6B6;
         -webkit-text-stroke: 0.8px black;
-        text-shadow: 2px 2px 7px rgba(0,0,0, 0.5);
+        text-shadow: $text-shadow;
         font-size: 6vw;
         margin-top: 0.3em;
     }
@@ -22,7 +24,7 @@
         grid-column-end: 6;
         grid-row-start: 4;
         justify-self: center;
-        font-family: "Red Rose";
+        font-family: "Red Rose", sans-serif;
         text-decoration: underline;
         font-size: 3vw;
 
@@ -38,7 +40,7 @@
     letter-spacing: 0.5px;
     p{
         font-size: 2.5vw;
-        font-family: "Red Rose";
+        font-family: "Red Rose", sans-serif;
         margin-top: 3vw;
     }
 }
@@ -47,7 +49,7 @@
     grid-column-start: 2;
     grid-row-start: 14;
     font-size: 2.5vw;
-    font-family: 'Petit Formal Script';
+    font-family: 'Petit Formal Script', cursive;
     height: 13vw;
     width: fit-content;
     border-bottom: 1px solid rgb(0, 0, 0);
@@ -59,7 +61,7 @@
     grid-column-start: 8;
     grid-row-start: 14;
     font-size: 2.5vw;
-    font-family: 'Petit Formal Script';
+    font-family: 'Petit Formal Script', cursive;
     text-align: right;
     width: fit-content;
     height: 17vw;

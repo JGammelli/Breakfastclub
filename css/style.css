@@ -6,7 +6,7 @@ header {
   -ms-grid-row: 1;
       grid-row-start: 1;
   position: fixed;
-  z-index: 1;
+  z-index: 1000;
 }
 
 .headerBanner {
@@ -28,7 +28,7 @@ header {
   left: 0;
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 768px) {
   .headerBanner {
     width: 100vw;
     height: 8vw;
@@ -90,7 +90,7 @@ h2 {
       grid-row-start: 4;
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 768px) {
   h2 {
     font-size: 3.4vw;
     -ms-grid-row: 3;
@@ -193,15 +193,15 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 5px, rgba(0, 0, 0, 0.22) 0px 1px 2px;
-          box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 5px, rgba(0, 0, 0, 0.22) 0px 1px 2px;
+  -webkit-box-shadow: rgba(59, 53, 53, 0.3) 0px 5px 5px, rgba(82, 76, 76, 0.22) 0px 1px 2px;
+          box-shadow: rgba(59, 53, 53, 0.3) 0px 5px 5px, rgba(82, 76, 76, 0.22) 0px 1px 2px;
 }
 
 .text-scroll-banner p {
   color: white;
   -webkit-text-stroke: 1px black;
   font-size: 5.5vw;
-  font-family: 'Red Rose';
+  font-family: 'Red Rose', sans-serif;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -209,7 +209,7 @@ h2 {
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   .text-scroll-banner p {
-    font-size: 2.6em;
+    font-size: 2.6vw;
     -webkit-text-stroke: 1.5px black;
   }
   .strawberrieBowl {
@@ -234,7 +234,7 @@ h2 {
 
 @media (min-width: 1025px) {
   .text-scroll-banner p {
-    font-size: 3.5em;
+    font-size: 2.7vw;
     -webkit-text-stroke: 1px black;
   }
   .strawberrieBowl {
@@ -256,8 +256,9 @@ h2 {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    font-size: 6.5vw;
-    -webkit-text-stroke: .1px black;
+    font-size: 6vw;
+    -webkit-text-stroke: 0.1px black;
+    margin-top: 4vw;
   }
 }
 
@@ -312,14 +313,14 @@ h2 {
 }
 
 .toastBanner p {
-  font-family: "Red Rose";
+  font-family: "Red Rose", sans-serif;
   color: #F34F69;
   width: 51vw;
   margin-bottom: 4px;
   font-size: 2.3vw;
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 768px) {
   .toastBanner p {
     width: 53vw;
     font-size: 2vw;
@@ -397,7 +398,7 @@ h2 {
 }
 
 .fruitBanner p, .fruitBanner a {
-  font-family: "Red Rose";
+  font-family: "Red Rose", sans-serif;
   color: #4C3F67;
   width: 49vw;
   margin-bottom: 4px;
@@ -420,7 +421,7 @@ h2 {
   z-index: 1;
   border-style: solid;
   border-color: white;
-  font-family: "Red Rose";
+  font-family: "Red Rose", sans-serif;
   -webkit-box-shadow: rgba(59, 53, 53, 0.3) 0px 5px 5px, rgba(82, 76, 76, 0.22) 0px 1px 2px;
           box-shadow: rgba(59, 53, 53, 0.3) 0px 5px 5px, rgba(82, 76, 76, 0.22) 0px 1px 2px;
   font-size: 3.5vw;
@@ -436,7 +437,7 @@ h2 {
   background-color: #E0D1FF;
 }
 
-@media only screen and (min-device-width: 540px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 540px) {
   .fruitBanner p, .fruitBanner a {
     width: 53vw;
     font-size: 2vw;
@@ -469,7 +470,7 @@ h2 {
     height: 100vh;
   }
   .roundBtn {
-    margin-top: 5vw;
+    margin-top: 0vw;
     margin-left: 4vw;
     width: 13vw;
     height: 13vw;
@@ -530,12 +531,12 @@ h2 {
 }
 
 .signupWrap h5 {
-  font-family: "Red Rose";
+  font-family: "Red Rose", sans-serif;
   font-size: 4vw;
 }
 
 .signupWrap input {
-  font-family: "Red Rose";
+  font-family: "Red Rose", sans-serif;
   padding: .5vw;
   padding-left: 2vw;
   border-style: dashed;
@@ -561,7 +562,7 @@ h2 {
 }
 
 .signupWrap button {
-  font-family: "Red Rose";
+  font-family: "Red Rose", sans-serif;
   font-size: 4vw;
   background-color: #FEFFC0;
   cursor: pointer;
@@ -573,6 +574,10 @@ h2 {
       align-self: center;
   -webkit-box-shadow: rgba(59, 53, 53, 0.3) 0px 5px 5px, rgba(82, 76, 76, 0.22) 0px 1px 2px;
           box-shadow: rgba(59, 53, 53, 0.3) 0px 5px 5px, rgba(82, 76, 76, 0.22) 0px 1px 2px;
+}
+
+.signupWrap button:hover {
+  background-color: #feffc080;
 }
 
 @media only screen and (min-device-width: 768px) {
@@ -641,7 +646,7 @@ h2 {
       grid-row-start: 1;
   -ms-grid-column-align: center;
       justify-self: center;
-  font-family: "Red Rose";
+  font-family: "Red Rose", sans-serif;
   color: #FFB6B6;
   -webkit-text-stroke: 0.8px black;
   text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
@@ -657,7 +662,7 @@ h2 {
       grid-row-start: 4;
   -ms-grid-column-align: center;
       justify-self: center;
-  font-family: "Red Rose";
+  font-family: "Red Rose", sans-serif;
   text-decoration: underline;
   font-size: 3vw;
 }
@@ -676,7 +681,7 @@ h2 {
 
 .toastTxt p {
   font-size: 2.5vw;
-  font-family: "Red Rose";
+  font-family: "Red Rose", sans-serif;
   margin-top: 3vw;
 }
 
@@ -686,7 +691,7 @@ h2 {
   -ms-grid-row: 14;
       grid-row-start: 14;
   font-size: 2.5vw;
-  font-family: 'Petit Formal Script';
+  font-family: 'Petit Formal Script', cursive;
   height: 13vw;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -701,7 +706,7 @@ h2 {
   -ms-grid-row: 14;
       grid-row-start: 14;
   font-size: 2.5vw;
-  font-family: 'Petit Formal Script';
+  font-family: 'Petit Formal Script', cursive;
   text-align: right;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -853,7 +858,7 @@ h2 {
       grid-row-start: 2;
   -ms-grid-column-align: center;
       justify-self: center;
-  font-family: "Red Rose";
+  font-family: "Red Rose", sans-serif;
   text-decoration: underline;
   font-size: 3vw;
 }
@@ -872,7 +877,7 @@ h2 {
 
 .drinkTxt p {
   font-size: 2.5vw;
-  font-family: "Red Rose";
+  font-family: "Red Rose", sans-serif;
   margin-top: 3vw;
 }
 
@@ -882,7 +887,7 @@ h2 {
   -ms-grid-row: 13;
       grid-row-start: 13;
   font-size: 2.5vw;
-  font-family: 'Petit Formal Script';
+  font-family: 'Petit Formal Script', cursive;
   height: 9vw;
   border-bottom: 1px solid black;
   line-height: 4vw;
@@ -896,7 +901,7 @@ h2 {
   -ms-grid-row: 13;
       grid-row-start: 13;
   font-size: 2.5vw;
-  font-family: 'Petit Formal Script';
+  font-family: 'Petit Formal Script', cursive;
   width: 10vw;
   height: 9vw;
   border-bottom: 1px solid black;
@@ -912,7 +917,7 @@ h2 {
   -ms-grid-row: 14;
       grid-row-start: 14;
   font-size: 2.5vw;
-  font-family: 'Petit Formal Script';
+  font-family: 'Petit Formal Script', cursive;
   height: 9vw;
   text-align: right;
   -ms-grid-column-align: start;
@@ -1102,7 +1107,7 @@ footer {
 }
 
 footer p {
-  font-family: "Red Rose";
+  font-family: "Red Rose", cursive;
   margin-top: 2vw;
   font-size: 4.7vw;
   line-height: 7vw;
@@ -1159,10 +1164,341 @@ footer span {
   }
 }
 
+.cookieWrap {
+  background-color: #dfffe200;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 70vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (5vw)[20];
+      grid-template-columns: repeat(20, 5vw);
+  -ms-grid-rows: (10vw)[7];
+      grid-template-rows: repeat(7, 10vw);
+  z-index: 100;
+}
+
+.cookieWrap h2 {
+  font-family: "Red Rose", sans-serif;
+  font-size: 5vw;
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+  -ms-grid-row: 5;
+      grid-row-start: 5;
+  color: #FF7B7B;
+  border: none;
+}
+
+.cookieWrap p {
+  font-family: "Red Rose", sans-serif;
+  font-size: 2vw;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 18;
+  -ms-grid-row: 6;
+      grid-row-start: 6;
+  grid-row-end: 8;
+  margin-top: -2.5vw;
+}
+
+.cookieBanner {
+  background-color: #DFFFE2;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 21;
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  grid-row-end: 8;
+}
+
+.mandarinsImg {
+  width: 18vw;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  z-index: 100;
+}
+
+.fruitsImg {
+  width: 20vw;
+  -ms-grid-column: 17;
+      grid-column-start: 17;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+}
+
+.acceptBtn, .declineBtn {
+  font-family: "Red Rose";
+  font-size: 3vw;
+  width: 12vw;
+  height: 7vw;
+  background-color: #FEFFC0;
+  cursor: pointer;
+  border: none;
+  -webkit-box-shadow: rgba(59, 53, 53, 0.3) 0px 5px 5px, rgba(82, 76, 76, 0.22) 0px 1px 2px;
+          box-shadow: rgba(59, 53, 53, 0.3) 0px 5px 5px, rgba(82, 76, 76, 0.22) 0px 1px 2px;
+  -ms-grid-column: 17;
+      grid-column-start: 17;
+  -ms-grid-row: 7;
+      grid-row-start: 7;
+}
+
+.acceptBtn {
+  -ms-grid-column: 14;
+      grid-column-start: 14;
+  -ms-grid-row: 7;
+      grid-row-start: 7;
+}
+
+.acceptBtn:hover, .declineBtn:hover {
+  background-color: #feffc080;
+}
+
+@media only screen and (min-device-width: 768px) {
+  .cookieWrap {
+    height: 40vw;
+    -ms-grid-columns: (5vw)[20];
+        grid-template-columns: repeat(20, 5vw);
+    -ms-grid-rows: (4vw)[10];
+        grid-template-rows: repeat(10, 4vw);
+  }
+  .cookieWrap h2 {
+    font-size: 4.5vw;
+    -ms-grid-column: 5;
+        grid-column-start: 5;
+    grid-column-end: 8;
+    -ms-grid-row: 6;
+        grid-row-start: 6;
+    margin-top: 1.5vw;
+  }
+  .cookieWrap p {
+    font-size: 1.5vw;
+    -ms-grid-column: 5;
+        grid-column-start: 5;
+    grid-column-end: 14;
+    -ms-grid-row: 8;
+        grid-row-start: 8;
+    grid-row-end: 10;
+    margin-top: 0;
+  }
+  .cookieBanner {
+    -ms-grid-row: 6;
+        grid-row-start: 6;
+    grid-row-end: 11;
+  }
+  .mandarinsImg {
+    width: 15vw;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    margin-top: 1.5vw;
+  }
+  .fruitsImg {
+    width: 15.5vw;
+    -ms-grid-column: 18;
+        grid-column-start: 18;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    margin-top: -6vw;
+  }
+  .acceptBtn, .declineBtn {
+    font-size: 2vw;
+    width: 10vw;
+    height: 5vw;
+    -ms-grid-column: 18;
+        grid-column-start: 18;
+    -ms-grid-row: 9;
+        grid-row-start: 9;
+  }
+  .acceptBtn {
+    -ms-grid-column: 15;
+        grid-column-start: 15;
+  }
+}
+
+@media (min-width: 1025px) {
+  .cookieWrap {
+    height: 25vw;
+    -ms-grid-columns: (5vw)[20];
+        grid-template-columns: repeat(20, 5vw);
+    -ms-grid-rows: (2.5vw)[10];
+        grid-template-rows: repeat(10, 2.5vw);
+  }
+  .cookieWrap h2 {
+    font-size: 2.5vw;
+    -ms-grid-column: 4;
+        grid-column-start: 4;
+    grid-column-end: 5;
+    -ms-grid-row: 7;
+        grid-row-start: 7;
+    margin-top: .6vw;
+  }
+  .cookieWrap p {
+    font-size: .8vw;
+    -ms-grid-column: 4;
+    grid-column: 4;
+    -ms-grid-row: 9;
+    grid-row: 9;
+    margin-top: 0;
+    width: 29vw;
+    margin-top: -1vw;
+    margin-left: -1.4vw;
+  }
+  .cookieBanner {
+    -ms-grid-row: 7;
+        grid-row-start: 7;
+    grid-row-end: 11;
+  }
+  .mandarinsImg {
+    width: 10vw;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    -ms-grid-row: 5;
+        grid-row-start: 5;
+    margin-top: 0;
+    margin-left: 2vw;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .fruitsImg {
+    width: 10vw;
+    -ms-grid-column: 19;
+        grid-column-start: 19;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    margin-top: -1.5vw;
+  }
+  .acceptBtn, .declineBtn {
+    font-size: 1.5vw;
+    width: 8vw;
+    height: 3vw;
+    -ms-grid-column: 15;
+        grid-column-start: 15;
+    -ms-grid-row: 8;
+        grid-row-start: 8;
+    margin-top: .6vw;
+    margin-left: 0;
+  }
+  .acceptBtn {
+    -ms-grid-column: 13;
+        grid-column-start: 13;
+  }
+}
+
+.rotate {
+  -webkit-animation: rotation 10s infinite linear;
+          animation: rotation 10s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+.grow-shrink {
+  -webkit-animation: scale 2s infinite linear;
+          animation: scale 2s infinite linear;
+}
+
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
+.grow {
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.grow:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+.text-scroll {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-animation: textScroll 30s linear infinite;
+          animation: textScroll 30s linear infinite;
+  text-align: left;
+}
+
+.text-scroll-banner {
+  overflow: hidden;
+}
+
+@-webkit-keyframes textScroll {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes textScroll {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Racing Sans One';
+  font-family: 'Racing Sans One', monospace;
 }
 
 body {
