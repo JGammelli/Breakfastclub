@@ -1,5 +1,7 @@
+@import "./variables";
+
 .menuSection{
-    background-color: #FFF9DA;
+    background-color: $background-color;
     width: 100vw;
     height: 100vh;
 }
