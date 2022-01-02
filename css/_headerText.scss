@@ -62,3 +62,13 @@ h2{
         grid-row-start: 2;
     }
 }
+@media not all and (min-resolution:.001dpcm) { 
+    @supports (-webkit-appearance:none) {
+        h2{
+            font-size: 3vw;
+            grid-column-start: 5;
+            grid-row-start: 2;
+            -webkit-text-stroke: 1px black;
+        }
+    }
+}

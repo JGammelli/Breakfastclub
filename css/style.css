@@ -122,6 +122,19 @@ h2 {
   }
 }
 
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    h2 {
+      font-size: 3vw;
+      -ms-grid-column: 5;
+          grid-column-start: 5;
+      -ms-grid-row: 2;
+          grid-row-start: 2;
+      -webkit-text-stroke: 1px black;
+    }
+  }
+}
+
 .firstPageSection {
   width: 100vw;
   height: 100vh;
@@ -259,6 +272,14 @@ h2 {
     font-size: 6vw;
     -webkit-text-stroke: 0.1px black;
     margin-top: 4vw;
+  }
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .firstPage h1 {
+      -webkit-text-stroke: 1px black;
+    }
   }
 }
 
@@ -1180,7 +1201,7 @@ footer span {
   z-index: 100;
 }
 
-.cookieWrap h2 {
+.cookieWrap h6 {
   font-family: "Red Rose", sans-serif;
   font-size: 5vw;
   -ms-grid-column: 4;
@@ -1189,6 +1210,7 @@ footer span {
       grid-row-start: 5;
   color: #FF7B7B;
   border: none;
+  margin-left: -5vw;
 }
 
 .cookieWrap p {
@@ -1265,7 +1287,7 @@ footer span {
     -ms-grid-rows: (4vw)[10];
         grid-template-rows: repeat(10, 4vw);
   }
-  .cookieWrap h2 {
+  .cookieWrap h6 {
     font-size: 4.5vw;
     -ms-grid-column: 5;
         grid-column-start: 5;
@@ -1273,6 +1295,7 @@ footer span {
     -ms-grid-row: 6;
         grid-row-start: 6;
     margin-top: 1.5vw;
+    margin-left: 0;
   }
   .cookieWrap p {
     font-size: 1.5vw;
@@ -1328,7 +1351,7 @@ footer span {
     -ms-grid-rows: (2.5vw)[10];
         grid-template-rows: repeat(10, 2.5vw);
   }
-  .cookieWrap h2 {
+  .cookieWrap h6 {
     font-size: 2.5vw;
     -ms-grid-column: 4;
         grid-column-start: 4;
@@ -1336,6 +1359,7 @@ footer span {
     -ms-grid-row: 7;
         grid-row-start: 7;
     margin-top: .6vw;
+    margin-left: -1vw;
   }
   .cookieWrap p {
     font-size: .8vw;

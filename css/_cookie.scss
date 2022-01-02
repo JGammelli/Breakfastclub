@@ -12,13 +12,14 @@
     grid-template-rows: repeat(7, 10vw);
     z-index: 100;
 
-    h2{
+    h6{
         font-family: "Red Rose", sans-serif;
         font-size: 5vw;
         grid-column-start: 4;
         grid-row-start: 5;
         color: #FF7B7B;
         border: none;
+        margin-left: -5vw;
      }
     p{
         font-family: "Red Rose", sans-serif;
@@ -72,17 +73,20 @@
     background-color: $yellow-btn-hover;
 }
 
+//Tablet
 @media only screen and (min-device-width: 768px){
     .cookieWrap{
         height: 40vw;
         grid-template-columns: repeat(20, 5vw);
         grid-template-rows: repeat(10, 4vw);
-        h2{
+        h6{
             font-size: 4.5vw;
             grid-column-start: 5;
             grid-column-end: 8;
             grid-row-start: 6;
             margin-top: 1.5vw;
+            margin-left: 0;
+
          }
         p{
             font-size: 1.5vw;
@@ -122,17 +126,20 @@
     }
 }
 
+//Desktop
 @media (min-width:1025px) { 
     .cookieWrap{
         height: 25vw;
         grid-template-columns: repeat(20, 5vw);
         grid-template-rows: repeat(10, 2.5vw);
-        h2{
+        h6{
             font-size: 2.5vw;
             grid-column-start: 4;
             grid-column-end: 5;
             grid-row-start: 7;
             margin-top: .6vw;
+            margin-left: -1vw;
+
          }
         p{
             font-size: .8vw;
